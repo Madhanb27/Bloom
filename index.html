@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloom — Grow Beauty Into Every Corner</title>
+  <meta name="description" content="Premium plants and home decor curated for calm, modern living.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ NAVIGATION ═══════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav__logo">Bloom</a>
+    <ul class="nav__links">
+      <li><a href="#about" class="nav__link">Story</a></li>
+      <li><a href="#shop" class="nav__link">Shop</a></li>
+      <li><a href="#products" class="nav__link">Products</a></li>
+      <li><a href="#lifestyle" class="nav__link">Lifestyle</a></li>
+    </ul>
+    <a href="#shop" class="btn btn--primary nav__cta">Shop Collection</a>
+    <button class="nav__burger" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__sticky">
+
+      <!-- Full-bleed video -->
+      <div class="hero__video-wrap">
+        <video class="hero__video" autoplay muted loop playsinline preload="auto">
+          <source src="merge.mp4" type="video/mp4">
+        </video>
+        <!-- Directional overlay: cream floor at bottom-left, transparent at center where plant lives -->
+        <div class="hero__overlay"></div>
+      </div>
+
+      <!-- Breathing gold glow synced with plant -->
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <!-- Floating botanical particles -->
+      <div class="hero__particles" aria-hidden="true">
+        <span class="hero__particle"></span>
+        <span class="hero__particle"></span>
+        <span class="hero__particle"></span>
+        <span class="hero__particle"></span>
+      </div>
+
+      <!-- Content: bottom-left editorial layout — plant is free in center -->
+      <div class="hero__content">
+        <div class="hero__eyebrow-wrap">
+          <span class="hero__eyebrow">Curated Botanical Living</span>
+          <span class="hero__eyebrow-rule" aria-hidden="true"></span>
+        </div>
+        <h1 class="hero__headline">
+          <span class="hero__line">Grow Beauty</span>
+          <span class="hero__line hero__line--italic">Into Every</span>
+          <span class="hero__line">Corner.</span>
+        </h1>
+        <p class="hero__subtext">Premium plants and home decor<br>curated for calm, modern living.</p>
+        <div class="hero__actions">
+          <a href="#shop" class="btn btn--primary btn--large hero__cta">Shop Collection</a>
+          <a href="#about" class="hero__ghost-link">Our Story <span>→</span></a>
+        </div>
+      </div>
+
+      <!-- Luxury vertical detail — right edge -->
+      <div class="hero__aside" aria-hidden="true">
+        <span class="hero__aside-bar"></span>
+        <p class="hero__aside-text">Botanical Living — MMXXIV</p>
+        <span class="hero__aside-bar"></span>
+      </div>
+
+      <!-- Scroll indicator — bottom center -->
+      <div class="hero__scroll-hint">
+        <span class="hero__scroll-label">Scroll to explore</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
+  <section class="about" id="about">
+    <div class="about__inner">
+
+      <!-- Left: editorial brand story -->
+      <div class="about__text">
+        <div class="about__label-wrap">
+          <p class="section-label">Our Story</p>
+          <span class="about__label-rule" aria-hidden="true"></span>
+        </div>
+        <h2 class="about__headline">
+          Where nature finds<br>its place in the<br>modern home.
+        </h2>
+        <div class="about__body-wrap">
+          <p class="about__body">Bloom began with a simple belief — that living with nature changes how we feel inside our homes. We source, style, and curate the finest plants and ceramic pieces so your space becomes a sanctuary.</p>
+          <p class="about__body">Every plant is chosen for its calm presence. Every pot is shaped by hand. Every piece carries warmth.</p>
+        </div>
+        <div class="about__cta-wrap">
+          <a href="#shop" class="btn btn--secondary">Explore Collection</a>
+          <p class="about__cta-note">Complimentary delivery on orders over £60</p>
+        </div>
+      </div>
+
+      <!-- Right: premium CSS botanical visual -->
+      <div class="about__visual">
+        <div class="about__frame">
+          <img src="about-plant.png" alt="Premium indoor plant arrangement in ceramic pot" class="about__image">
+          <!-- Gold vertical accent line -->
+          <div class="about__v-accent" aria-hidden="true"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Full-width editorial quote -->
+    <div class="about__statement">
+      <div class="about__quote-wrap">
+        <span class="about__quote-rule" aria-hidden="true"></span>
+        <div class="about__quote-inner">
+          <span class="about__quote-ornament" aria-hidden="true"></span>
+          <blockquote class="about__quote">
+            "A home with living things<br>is a home that breathes."
+          </blockquote>
+          <cite class="about__quote-cite">— Bloom, 2024</cite>
+        </div>
+        <span class="about__quote-rule" aria-hidden="true"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ CATEGORIES ═══════════════════════════════ -->
+  <section class="categories" id="shop">
+    <div class="section-header">
+      <p class="section-label">Curated for You</p>
+      <h2 class="section-headline">Shop by Category</h2>
+    </div>
+
+    <div class="categories__grid">
+
+      <!-- Card: Indoor Plants -->
+      <article class="cat-card" data-category="plants">
+        <div class="cat-card__visual">
+          <img src="category-plants.png" alt="Indoor Plants" class="cat-card__image">
+          <div class="cat-card__shimmer" aria-hidden="true"></div>
+        </div>
+        <div class="cat-card__body">
+          <h3 class="cat-card__title">Indoor Plants</h3>
+          <p class="cat-card__desc">Thriving specimens for every light condition.</p>
+          <a href="#" class="cat-card__link">Explore <span class="cat-card__arrow">→</span></a>
+        </div>
+      </article>
+
+      <!-- Card: Ceramic Pots -->
+      <article class="cat-card" data-category="pots">
+        <div class="cat-card__visual">
+          <img src="category-pots.png" alt="Ceramic Pots" class="cat-card__image">
+          <div class="cat-card__shimmer" aria-hidden="true"></div>
+        </div>
+        <div class="cat-card__body">
+          <h3 class="cat-card__title">Ceramic Pots</h3>
+          <p class="cat-card__desc">Hand-shaped vessels in matte earthy finishes.</p>
+          <a href="#" class="cat-card__link">Explore <span class="cat-card__arrow">→</span></a>
+        </div>
+      </article>
+
+      <!-- Card: Home Decor -->
+      <article class="cat-card" data-category="decor">
+        <div class="cat-card__visual">
+          <img src="category-decor.png" alt="Home Decor" class="cat-card__image">
+          <div class="cat-card__shimmer" aria-hidden="true"></div>
+        </div>
+        <div class="cat-card__body">
+          <h3 class="cat-card__title">Home Decor</h3>
+          <p class="cat-card__desc">Objects that make a room feel considered.</p>
+          <a href="#" class="cat-card__link">Explore <span class="cat-card__arrow">→</span></a>
+        </div>
+      </article>
+
+      <!-- Card: Gift Sets -->
+      <article class="cat-card" data-category="gifts">
+        <div class="cat-card__visual">
+          <img src="category-gifts.png" alt="Gift Sets" class="cat-card__image">
+          <div class="cat-card__shimmer" aria-hidden="true"></div>
+        </div>
+        <div class="cat-card__body">
+          <h3 class="cat-card__title">Gift Sets</h3>
+          <p class="cat-card__desc">Thoughtfully curated for the ones you love.</p>
+          <a href="#" class="cat-card__link">Explore <span class="cat-card__arrow">→</span></a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ FEATURED PRODUCTS ═══════════════════════════════ -->
+  <section class="products" id="products">
+    <div class="section-header">
+      <p class="section-label">New Arrivals</p>
+      <h2 class="section-headline">Featured Collection</h2>
+      <p class="products__sub">Each piece is selected for its quiet beauty and lasting quality.</p>
+    </div>
+
+    <div class="products__grid">
+
+      <!-- Product 1: Monstera Deliciosa -->
+      <article class="prod-card">
+        <div class="prod-card__media">
+          <img src="product-monstera.jpg" alt="Monstera Deliciosa" class="prod-card__image">
+          <span class="prod-card__badge">New</span>
+          <button class="prod-card__wish" aria-label="Save to wishlist">♡</button>
+        </div>
+        <div class="prod-card__info">
+          <p class="prod-card__cat">Indoor Plant</p>
+          <h3 class="prod-card__name">Monstera Deliciosa</h3>
+          <p class="prod-card__desc">A statement plant that transforms any corner.</p>
+          <div class="prod-card__foot">
+            <span class="prod-card__price">£48</span>
+            <button class="btn btn--primary btn--small prod-card__add">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 2: Matte Terracotta Vessel -->
+      <article class="prod-card">
+        <div class="prod-card__media">
+          <img src="product-terracotta-vessel.jpg" alt="Matte Terracotta Vessel" class="prod-card__image">
+          <button class="prod-card__wish" aria-label="Save to wishlist">♡</button>
+        </div>
+        <div class="prod-card__info">
+          <p class="prod-card__cat">Ceramic Pot</p>
+          <h3 class="prod-card__name">Matte Terracotta Vessel</h3>
+          <p class="prod-card__desc">Hand-thrown in a small studio. Finite stock.</p>
+          <div class="prod-card__foot">
+            <span class="prod-card__price">£34</span>
+            <button class="btn btn--primary btn--small prod-card__add">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 3: Boston Fern Cascade -->
+      <article class="prod-card">
+        <div class="prod-card__media">
+          <img src="product-boston-fern.jpg" alt="Boston Fern Cascade" class="prod-card__image">
+          <span class="prod-card__badge prod-card__badge--warm">Bestseller</span>
+          <button class="prod-card__wish" aria-label="Save to wishlist">♡</button>
+        </div>
+        <div class="prod-card__info">
+          <p class="prod-card__cat">Indoor Plant</p>
+          <h3 class="prod-card__name">Boston Fern Cascade</h3>
+          <p class="prod-card__desc">Trailing softness for shelves and mantles.</p>
+          <div class="prod-card__foot">
+            <span class="prod-card__price">£29</span>
+            <button class="btn btn--primary btn--small prod-card__add">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 4: Sage Green Planter -->
+      <article class="prod-card">
+        <div class="prod-card__media">
+          <img src="product-sage-planter.jpg" alt="Sage Green Planter" class="prod-card__image">
+          <button class="prod-card__wish" aria-label="Save to wishlist">♡</button>
+        </div>
+        <div class="prod-card__info">
+          <p class="prod-card__cat">Ceramic Pot</p>
+          <h3 class="prod-card__name">Sage Green Planter</h3>
+          <p class="prod-card__desc">Minimal form. Matte sage glaze. Pure calm.</p>
+          <div class="prod-card__foot">
+            <span class="prod-card__price">£42</span>
+            <button class="btn btn--primary btn--small prod-card__add">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 5: Woven Linen Basket -->
+      <article class="prod-card">
+        <div class="prod-card__media">
+          <img src="product-linen-basket.jpg" alt="Woven Linen Basket" class="prod-card__image">
+          <button class="prod-card__wish" aria-label="Save to wishlist">♡</button>
+        </div>
+        <div class="prod-card__info">
+          <p class="prod-card__cat">Home Decor</p>
+          <h3 class="prod-card__name">Woven Linen Basket</h3>
+          <p class="prod-card__desc">Natural plant hider. Warm texture, any space.</p>
+          <div class="prod-card__foot">
+            <span class="prod-card__price">£26</span>
+            <button class="btn btn--primary btn--small prod-card__add">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 6: Bloom Starter Set -->
+      <article class="prod-card">
+        <div class="prod-card__media">
+          <img src="product-bloom-starter-set.png" alt="The Bloom Starter Set" class="prod-card__image">
+          <span class="prod-card__badge prod-card__badge--gold">Gift</span>
+          <button class="prod-card__wish" aria-label="Save to wishlist">♡</button>
+        </div>
+        <div class="prod-card__info">
+          <p class="prod-card__cat">Gift Set</p>
+          <h3 class="prod-card__name">The Bloom Starter Set</h3>
+          <p class="prod-card__desc">Plant, pot, and care card. A perfect beginning.</p>
+          <div class="prod-card__foot">
+            <span class="prod-card__price">£68</span>
+            <button class="btn btn--primary btn--small prod-card__add">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ LIFESTYLE GRID ═══════════════════════════════ -->
+  <section class="lifestyle" id="lifestyle">
+    <div class="section-header">
+      <p class="section-label">The Bloom Home</p>
+      <h2 class="section-headline">A Life in Full Bloom</h2>
+    </div>
+
+    <div class="life-grid">
+
+      <!-- Cell 1: Morning light — tall left column -->
+      <div class="life-cell life-cell--morning">
+        <img src="lifestyle-living-room.png" alt="Morning light, living room" class="life-cell__bg">
+        <div class="life-cell__overlay"></div>
+        <p class="life-cell__caption">Morning light, living room</p>
+      </div>
+
+      <!-- Cell 2: Working desk -->
+      <div class="life-cell life-cell--desk">
+        <img src="lifestyle-shelf.png" alt="The working space" class="life-cell__bg">
+        <div class="life-cell__overlay"></div>
+        <p class="life-cell__caption">The working space</p>
+      </div>
+
+      <!-- Cell 3: Golden hour window -->
+      <div class="life-cell life-cell--window">
+        <img src="lifestyle-foliage.png" alt="Golden hour corner" class="life-cell__bg">
+        <div class="life-cell__overlay"></div>
+        <p class="life-cell__caption">Golden hour corner</p>
+      </div>
+
+      <!-- Cell 4: Spa bathroom -->
+      <div class="life-cell life-cell--bath">
+        <img src="lifestyle-reading-corner.png" alt="The spa bathroom" class="life-cell__bg">
+        <div class="life-cell__overlay"></div>
+        <p class="life-cell__caption">The spa bathroom</p>
+      </div>
+
+      <!-- Cell 5: Reading nook -->
+      <div class="life-cell life-cell--nook">
+        <img src="lifestyle-gift-set.png" alt="Reading nook" class="life-cell__bg">
+        <div class="life-cell__overlay"></div>
+        <p class="life-cell__caption">Reading nook</p>
+      </div>
+
+      <!-- Cell 6: Dining table — full width bottom -->
+      <div class="life-cell life-cell--dining">
+        <img src="lifestyle-premium-interior.png" alt="Table centrepiece" class="life-cell__bg">
+        <div class="life-cell__overlay"></div>
+        <p class="life-cell__caption">Table centrepiece</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ TESTIMONIALS ═══════════════════════════════ -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-header">
+      <p class="section-label">What People Say</p>
+      <h2 class="section-headline">Stories From Our Community</h2>
+    </div>
+
+    <div class="testi__viewport">
+      <div class="testi__track" id="testiTrack">
+
+        <article class="testi-card">
+          <div class="testi-card__leaf" aria-hidden="true"></div>
+          <p class="testi-card__quote">"The Monstera arrived perfectly packaged and has been thriving in my living room for six months. Bloom's quality is unlike anything I've found before."</p>
+          <footer class="testi-card__foot">
+            <div class="testi-card__avatar">
+  <img src="avatar-sophie.png" alt="Sophie L.">
+</div>
+            <div class="testi-card__byline">
+              <p class="testi-card__name">Sophie L.</p>
+              <p class="testi-card__loc">London, UK</p>
+            </div>
+          </footer>
+        </article>
+
+        <article class="testi-card">
+          <div class="testi-card__leaf" aria-hidden="true"></div>
+          <p class="testi-card__quote">"I ordered the Starter Gift Set for my sister's birthday. The ceramics are exquisite — the kind of thing you keep forever."</p>
+          <footer class="testi-card__foot">
+            <div class="testi-card__avatar">
+  <img src="avatar-marcus.png" alt="Marcus T.">
+</div>
+            <div class="testi-card__byline">
+              <p class="testi-card__name">Marcus T.</p>
+              <p class="testi-card__loc">Amsterdam, NL</p>
+            </div>
+          </footer>
+        </article>
+
+        <article class="testi-card">
+          <div class="testi-card__leaf" aria-hidden="true"></div>
+          <p class="testi-card__quote">"Our apartment feels completely transformed. The plants have changed the quality of light in every room. Bloom is magical."</p>
+          <footer class="testi-card__foot">
+            <div class="testi-card__avatar">
+  <img src="avatar-elena.png" alt="Elena R.">
+</div>
+            <div class="testi-card__byline">
+              <p class="testi-card__name">Elena R.</p>
+              <p class="testi-card__loc">Milan, IT</p>
+            </div>
+          </footer>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="testi__dots" role="tablist" aria-label="Testimonials navigation">
+      <button class="testi__dot testi__dot--on" role="tab" aria-selected="true" data-idx="0"></button>
+      <button class="testi__dot" role="tab" aria-selected="false" data-idx="1"></button>
+      <button class="testi__dot" role="tab" aria-selected="false" data-idx="2"></button>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ NEWSLETTER ═══════════════════════════════ -->
+  <section class="newsletter" id="newsletter">
+    <!-- Decorative botanical leaf silhouettes -->
+    <div class="nl__botanicals" aria-hidden="true">
+      <div class="nl__leaf nl__leaf--left"></div>
+      <div class="nl__leaf nl__leaf--right"></div>
+    </div>
+
+    <div class="nl__content">
+      <p class="section-label">Join the Community</p>
+      <h2 class="nl__headline">Good things grow<br>with good company.</h2>
+      <p class="nl__sub">Seasonal care guides, new arrivals, and thoughtful botanical inspiration. — delivered once a month.</p>
+
+      <form class="nl__form" id="nlForm" novalidate>
+        <div class="nl__row">
+          <input
+            type="email"
+            class="nl__input"
+            placeholder="Your email address"
+            aria-label="Email address"
+            autocomplete="email"
+            required
+          >
+          <button type="submit" class="btn btn--primary nl__submit">Join Newsletter</button>
+        </div>
+        <p class="nl__note">No spam. Unsubscribe at any time.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+  <footer class="footer" id="footer">
+    <div class="footer__top">
+
+      <!-- Brand column -->
+      <div class="footer__brand">
+        <p class="footer__logo">Bloom</p>
+        <p class="footer__brand-line">Grow&nbsp;•&nbsp;Nurture&nbsp;•&nbsp;Thrive</p>
+        <p class="footer__tagline">Grow beauty into every corner.</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="4.5"/>
+              <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="#" class="footer__social" aria-label="Pinterest">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-2 .04-2.86.18-.77 1.23-5.22 1.23-5.22s-.31-.63-.31-1.57c0-1.47.85-2.57 1.91-2.57.9 0 1.34.68 1.34 1.49 0 .91-.58 2.27-.88 3.53-.25 1.05.52 1.91 1.55 1.91 1.86 0 3.3-1.96 3.3-4.8 0-2.51-1.8-4.26-4.38-4.26-2.98 0-4.73 2.23-4.73 4.54 0 .9.35 1.86.78 2.39.09.11.1.2.07.31l-.29 1.18c-.05.19-.16.23-.36.14-1.39-.65-2.26-2.68-2.26-4.32C6.41 8.49 8.96 6 12.5 6c2.55 0 5.37 1.82 5.37 5.1 0 3.47-2.19 6.26-5.23 6.26-1.02 0-1.98-.53-2.31-1.15l-.63 2.33c-.23.88-.84 1.98-1.25 2.65.94.29 1.94.45 2.95.45 5.52 0 10-4.48 10-10S17.52 2 12 2z"/>
+            </svg>
+          </a>
+          <a href="#" class="footer__social" aria-label="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+              <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.77-.09 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.27 8.27 0 0 0 4.84 1.55V6.79a4.85 4.85 0 0 1-1.07-.1z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation columns -->
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <div class="footer__col">
+          <p class="footer__col-head">Shop</p>
+          <ul>
+            <li><a href="#">Indoor Plants</a></li>
+            <li><a href="#">Ceramic Pots</a></li>
+            <li><a href="#">Home Decor</a></li>
+            <li><a href="#">Gift Sets</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-head">Company</p>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Plant Care</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-head">Support</p>
+          <ul>
+            <li><a href="#">Delivery Info</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+
+    <p class="footer__craft">Crafted with care for modern botanical living.</p>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 Bloom. All rights reserved.</p>
+      <div class="footer__legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════ SCRIPTS ═══════════════════════════════ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>
