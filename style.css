@@ -525,6 +525,7 @@ input, textarea { font-family: inherit; }
   }
   .hero__aside { display: none; }
   .hero__subtext br { display: none; }
+  .hero__scroll-hint { display: none; }
 
   /* Reset the desktop horizontal plant offset — center composition on mobile */
   .hero__video { object-position: 50% center; }
