@@ -525,6 +525,19 @@ input, textarea { font-family: inherit; }
   }
   .hero__aside { display: none; }
   .hero__subtext br { display: none; }
+
+  /* Reset the desktop horizontal plant offset — center composition on mobile */
+  .hero__video { object-position: 50% center; }
+
+  /* Cream scrim reduces plant visual dominance ~12–14% without layout change */
+  .hero__video-wrap::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(247,243,238,0.13);
+    z-index: 1;
+    pointer-events: none;
+  }
 }
 @media (max-width: 480px) {
   .hero__actions { flex-direction: column; align-items: flex-start; gap: 1.2rem; }
