@@ -723,6 +723,19 @@ input, textarea { font-family: inherit; }
   }
 }
 @media (max-width: 768px) {
+  /* About image — portrait frame matches plant photo ratio, cover fills card with minimal zoom */
+  .about__frame {
+    aspect-ratio: 3 / 4;
+    max-height: none;
+  }
+  .about__image {
+    object-fit: cover;
+    object-position: center center;
+    padding: 0;
+    transform: scale(1.06);
+    transform-origin: center center;
+  }
+
   .about__quote-wrap {
     flex-direction: column;
     gap: 2rem;
